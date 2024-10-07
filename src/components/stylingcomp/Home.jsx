@@ -97,7 +97,7 @@ const Home = () => {
   </div>
 
   {/* Right Section: Grid */}
-  <div className='grid md:grid-cols-3 translate-x-[-10px] px-0   flex-1 lg:py-32 md:py-7 md:mx-10 py-24 md:space-y-0 space-y-14 '>
+  <div className='grid md:grid-cols-3 translate-x-[-10px] px-0   flex-1 lg:py-32 md:py-7 md:mx-10 py-2 md:space-y-0 space-y-14 '>
   <div className='md:col-span-1 col-span-3 h-auto w-auto md:mx-0 mx-8'>
     <span className='flex justify-center lg:block md:block'>
     <FontAwesomeIcon icon={faFileCircleCheck} className='text-[33px] text-orange-400 mx-[122px] md:mx-0' />
@@ -170,7 +170,7 @@ const Home = () => {
   </div>
 
   {/* Product 1 */}
-  <div className='md:col-span-1 col-span-2 h-auto  max-w-[600px] color10 mx-8 md:px-5 px-2 md:py-5 py-3'>
+  <div className='md:col-span-1 col-span-2 h-auto  max-w-[600px] color10 mx-8 md:px-5 px-2 md:py-5 py-3 '>
     <div className='flex items-center space-x-6'>
       <FontAwesomeIcon icon={faBriefcase} className='md:h-9 md:w-9 w-8  h-8 text-orange-400' />
       <h2 className='md:text-[22px] text-[18px]  font-semibold font2 text-white'>Video Courses</h2>

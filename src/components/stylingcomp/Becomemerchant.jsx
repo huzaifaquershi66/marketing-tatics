@@ -36,7 +36,7 @@ Start Now
     </button>
     </span>
   </div>
-    <div className='grid md:grid-cols-3 translate-x-[-10px] px-0   flex-1 lg:py-32 md:py-7 md:mx-10 py-24 md:space-y-0 space-y-14 '>
+    <div className='grid md:grid-cols-3 translate-x-[-10px] px-0   flex-1 lg:py-32 md:py-7 md:mx-10 py-2 md:space-y-0 space-y-14 '>
   <div className='md:col-span-1 col-span-3 h-auto w-auto md:mx-0 mx-8'>
     <span className='flex justify-center lg:block md:block'>
     <FontAwesomeIcon icon={faFileCircleCheck} className='text-[33px] text-orange-400 mx-[122px] md:mx-0' />
