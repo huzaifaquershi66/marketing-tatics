@@ -21,7 +21,7 @@ const Workasaffitialte = () => {
     </div>
     <div className='color10 text-black h-auto w-full flex flex-col lg:flex-row'>
   {/* Left Section: md:px-24 */}
-  <div className="lg:px-6 md:py-10 lg:py-32 py-9  px-2 flex-1 md:px-10">
+  <div className="lg:px-6 md:py-10 lg:py-32 py-3  px-2 flex-1 md:px-10">
     <h1 className='font-bold font-sans md:text-[42px] text-[32px] text-white whitespace-nowrap md:text-start text-center'>What You Get</h1>
     
     <h3 className='py-3 font-sans md:text-[18px] text-[16px] text-white lg:max-w-[500px] md:px-0 px-4 md:text-start text-center'>
@@ -33,16 +33,16 @@ Get Instant Access
     </button>
     </span>
   </div>
-    <div className='grid md:grid-cols-3 translate-x-[-10px] px-0   flex-1 lg:py-32 md:py-7 md:mx-10 py-2 md:space-y-0 space-y-14 '>
+    <div className='grid md:grid-cols-3 translate-x-[-15px] px-0   flex-1 lg:py-32 md:py-7 md:mx-10 py-0 md:space-y-0 space-y-14 '>
   <div className='md:col-span-1 col-span-3 h-auto w-auto md:mx-0 mx-8'>
     <span className='flex justify-center lg:block md:block'>
     <FontAwesomeIcon icon={faFileCircleCheck} className='text-[33px] text-orange-400 mx-[122px] md:mx-0' />
     </span>
     <span>
-    <h3 className='font-bold font-sans text-[25px] text-white my-2 md:text-start lg:text-start text-center md:mx-0'>Multiple Subscription Plans</h3>
+    <h3 className='font-bold font-sans text-[21px] text-white my-2 md:text-start lg:text-start text-center md:mx-0'>Multiple Subscription Plans</h3>
     </span>
     <span>
- <h3 className='my-2 text-[18px] text-gray-400 lg:w-60 md:w-[350px] md:text-start text-center'>
+ <h3 className='my-2 text-[15px] text-gray-400 lg:w-60 md:w-[350px] md:text-start text-center'>
  Step No 1. Sign up you Account with Marketing Tectic.com and Activate with any Educational Product.
  </h3>
     </span>
@@ -52,10 +52,10 @@ Get Instant Access
     <FontAwesomeIcon icon={faCube} className='text-[33px] text-orange-400 mx-[122px] md:mx-0' />
     </span>
     <span>
-    <h3 className='font-bold font-sans text-[25px] text-white my-2  md:text-start lg:text-start text-center  md:mx-0 '>Complete Sales</h3>
+    <h3 className='font-bold font-sans text-[21px] text-white my-2  md:text-start lg:text-start text-center  md:mx-0 '>Complete Sales</h3>
     </span>
     <span>
- <h3 className='my-2 text-[18px] text-gray-400 lg:w-60 md:text-start text-center md:w-[350px]'>
+ <h3 className='my-2 text-[15px] text-gray-400 lg:w-60 md:text-start text-center md:w-[350px]'>
  Promote Our Educational Products on social media and other platforms with already pre written ads.
  </h3>
     </span>
@@ -65,10 +65,10 @@ Get Instant Access
     <FontAwesomeIcon icon={faShield} className='text-[33px] text-orange-400 mx-[122px] md:mx-0' />
     </span>
     <span>
-    <h3 className='font-bold font-sans text-[25px] text-white my-2 whitespace-nowrap md:text-start lg:text-start text-center  md:mx-0'>Best Products</h3>
+    <h3 className='font-bold font-sans text-[21px] text-white my-2 whitespace-nowrap md:text-start lg:text-start text-center  md:mx-0'>Best Products</h3>
     </span>
     <span>
- <h3 className='my-2 text-[18px] text-gray-400 lg:w-60 md:text-start text-center md:w-[350px] '>
+ <h3 className='my-2 text-[15px] text-gray-400 lg:w-60 md:text-start text-center md:w-[350px] '>
  Get 100% commission on any purchased from your link and withdrawal direct into your banks account instantly
  </h3>
     </span>

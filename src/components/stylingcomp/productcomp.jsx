@@ -4,8 +4,8 @@ import { faCheckCircle, faDollarSign, faSyncAlt } from '@fortawesome/free-solid-
 
 const DigitalLibrary = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen px-4 text-center text-white bg-black">
-      <h1 className="text-5xl font-bold mb-4">
+    <div className="flex flex-col items-center justify-center  h-screen px-4 text-center text-white bg-black">
+      <h1 className="md:text-5xl text-3xl  font-bold mb-4">
         Your own Digital Library without Limits
       </h1>
       <p className="text-xl mb-2">
