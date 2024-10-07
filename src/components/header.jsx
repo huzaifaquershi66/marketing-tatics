@@ -54,7 +54,18 @@ const Header = () => {
       navigate(routes[index]);
       settoggleform(false)
     };
- 
+    useEffect(() => {
+      if (toggleform) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'auto';
+      }
+  
+      // Cleanup when the component is unmounted or when toggleform changes
+      return () => {
+        document.body.style.overflow = 'auto';
+      };
+    }, [toggleform]);
   return (
     <>
       <div className={`h-20 w-full flex items-center px-4 lg:px-8 lg:space-x-2 space-x-4 z-50 border-b-2 fixed top-0 overflow-hidden transition-all duration-300 ${isScrolled ? 'bg-white text-black' : 'bg-transparent text-white'}`}>
@@ -103,7 +114,7 @@ const Header = () => {
   </div> 
  
       <div
-        className={`h-[720px] visible lg:invisible bg-white fixed  -mt-20 z-50 backing overflow-x-hidden  ${
+        className={`h-[740px] visible lg:invisible bg-white fixed  -mt-20 z-50 backing overflow-x-hidden  ${
           toggleform ? 'show mx-0' : ''
         }`}
         style={{ overflowY: 'auto', maxWidth: '89%' }}
