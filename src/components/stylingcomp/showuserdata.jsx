@@ -1,13 +1,19 @@
 
-import { useSelector } from "react-redux";
-
+import { useDispatch, useSelector } from "react-redux";
+import { deleteUserData } from '../../store/userdataslice';
+import { useId } from "react";
+ 
 const UserDataDisplay = () => {
   const userData = useSelector((state) => state.userData);
+  const dispatch = useDispatch()
   console.log(userData); // Redux store se data le rahe hain
 
   const handlesubmit = ()=>{
     alert("product succesfully submit to user")
   }
+  const handleDelete = (transactionId) => {
+    dispatch(deleteUserData({ transactionId })); // Call deleteUserData with the transactionId
+  };
 
   return (
       <div className="p-6">
@@ -21,8 +27,26 @@ const UserDataDisplay = () => {
                           {user.transactionId && <li>Transaction ID: {user.transactionId}</li>}
                           {user.phonenumber && <li>Phone Number: {user.phonenumber}</li>}
                       </ul>
-                      <button onClick={handlesubmit} className="h-10 w-20 bg-blue-600 text-white rounded">Submit</button>
+                      <button 
+  onClick={() => {
+    handlesubmit(); // Call the handlesubmit function
+    handleDelete(user.transactionId); // Then call handleDelete
+  }} 
+  className="h-10 w-20 bg-blue-600 text-white rounded"
+>
+  Submit
+</button>
+<button 
+  onClick={() => handleDelete(user.transactionId)} // Only deletes the user
+  className="h-10 w-20 mx-4 bg-red-600 text-white rounded"
+>
+  Delete
+</button>
+
+
                   </div>
+                             
+                
               ))
           ) : (
               <p>No user data available.</p>

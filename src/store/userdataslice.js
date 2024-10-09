@@ -22,12 +22,17 @@ const userDataSlice = createSlice({
       // Add new user data to the users array
       state.users.push({ price, transactionId, phonenumber });
   },
-  
+  deleteUserData(state, action) {
+    const { transactionId } = action.payload; // Expecting the transactionId of the user to be deleted
+
+    // Filter out the user with the matching transactionId
+    state.users = state.users.filter(user => user.transactionId !== transactionId);
+  },
   },
 });
 
 // Export the action
-export const { setUserData } = userDataSlice.actions;
+export const { setUserData ,deleteUserData} = userDataSlice.actions;
 
 // Export the reducer
 export default userDataSlice.reducer;

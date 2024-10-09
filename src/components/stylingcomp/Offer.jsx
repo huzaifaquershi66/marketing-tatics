@@ -3,6 +3,8 @@ import { useDispatch } from 'react-redux';
 import { setUserData } from "../../store/userdataslice";
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const offers = [
     {
       title: 'Limited Time Offer',
@@ -150,7 +152,7 @@ const Offers = () => {
   const [phonenumber, setPhoneNumber] = useState(''); // updated state for phone number
   const dispatch = useDispatch();
   const navigate = useNavigate()
-
+  const notify = () => toast("This is a toast notification!");
  const openModal = () => {
     setIsModalOpen(true);
   };
@@ -178,6 +180,7 @@ const Offers = () => {
   
 
     closeModal()
+    alert("Your request has been submitted successfully")
  
   }
 
@@ -228,7 +231,7 @@ const Offers = () => {
             <p>Name: <strong>Muhammad Hanif</strong></p>
             <form onSubmit={handleSubmit}>
 
-            <label className="block mt-4">Price:</label>
+            <label className="block mt-4">Amount:</label>
             <input type="text" className="border rounded p-2 w-full" placeholder="Enter Price" value={price} onChange={(e) => setPrice(e.target.value)} />
             <label className="block mt-4">Your Transaction ID:</label>
             <input type="text" className="border rounded p-2 w-full" placeholder="Enter Transaction ID" value={transactionId} onChange={(e) => setTransactionId(e.target.value)} />
@@ -238,10 +241,10 @@ const Offers = () => {
               <button onClick={closeModal} className="bg-gray-300 text-black w-12 py-2 rounded">
                 Close
               </button>
-              <button  className="bg-blue-500 w-16 text-white py-2 rounded">
+              <button   className="bg-blue-500 w-16 text-white py-2 rounded">
                 Submit
               </button>
-            
+                
             </div>
             </form>
           </div>
