@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faDollarSign, faSyncAlt } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const DigitalLibrary = () => {
   return (
@@ -29,9 +30,11 @@ const DigitalLibrary = () => {
         <FontAwesomeIcon icon={faSyncAlt} className="mr-2 text-green-500" /> 
         Lifetime Updates
       </p>
+      <Link to="/offer">
       <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg">
         Get Instant Access Now
       </button>
+      </Link>
     </div>
   );
 };

@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import HowItWorks from './Howto';
 import {faCheckCircle}  from '@fortawesome/free-solid-svg-icons';
 import image  from "../../assets/image.jpeg"
+import { Link } from 'react-router-dom';
 
 
 const Product = () => {
@@ -45,9 +46,11 @@ const Product = () => {
 </div>
 
     <div className='flex justify-center '>
+      <Link to="/offer">
     <button className="color11 hover:bg-blue-600 text-black md:font-bold font-sans font-semibold py-2 my-2 px-4 rounded-3xl h-12  md:min-w-[260px]">
               Get Instant Access Now
             </button>
+            </Link>
             </div>
     <div className=' h-full w-auto flex justify-center md:px-0 px-6 py-8  '>
    
@@ -73,9 +76,11 @@ const Product = () => {
   <img className='h-auto max-w-full md:max-w-[800px] w-full object-cover' src={image} alt='Our Products' />
 </div>
 <div className='flex justify-center '>
+  <Link to="/offer">
     <button className="color11 hover:bg-blue-600 text-black md:font-bold font-sans font-semibold py-2 md:my-2 my-5 px-4 rounded-3xl h-12 min-w-[260px]">
               Get Instant Access Now
             </button>
+            </Link>
             </div>
             <div className="color11 py-2 md:mx-10 mx-4 md:my-6 my-9">
       <h1 className="text-blackmd:text-[15px] text-[12px]  font-bold text-center">
@@ -144,9 +149,11 @@ learners who prefer podcasts
         
         </div>
         <div className='flex justify-center  '>
+          <Link to="/offer">
     <button className=" border-2 border-black hover:bg-blue-600 text-black font-bold py-2 px-4 rounded-3xl h-11 min-w-[240px]">
                 Preview Free Samples
             </button>
+            </Link>
             </div>
       </div>
     </div>
